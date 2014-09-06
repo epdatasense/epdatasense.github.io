@@ -1,4 +1,39 @@
 <%- include _nav %>
 
+    <div class="container">
+        <div class="row contact">
+            <div class="col-md-8">
+                <h2>Get In Touch With Us</h2>
+                <p>Send us your message and we will reply shortly.</p>
+                <form role="form" method="post" action="" class="contact-form">
+                    <fieldset>
+                        <div class="form-group">
+                            <label>Your name</label>
+                            <input type="text" name="contact-name" value="" class="form-control" 
+                                   data-bv-notempty data-bv-notempty-message="Please enter your name" />
+                        </div>
 
-<%- include _footer %>
+
+                        <div class="form-group">
+                            <label>Your email address</label>
+                            <input type="text" name="contact-email" class="form-control"
+                                   data-bv-notempty  data-bv-notempty-message="Please enter your email address" data-bv-emailaddress/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea rows="8" name="contact-message" class="form-control" 
+                                      data-bv-notempty  data-bv-notempty-message="Please enter your message"></textarea>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Send Your Message" name="contact-submit" class="btn btn-green btn-lg" title="Click here to submit your message." />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include _footer %>

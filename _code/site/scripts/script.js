@@ -17,5 +17,7 @@ $(function () {
         changeHash: true,
         filter: ':not(.external)'
     });
-    
+
+    $('.contact-form').bootstrapValidator();
+
 });
