@@ -20,4 +20,7 @@ $(function () {
 
     $('.contact-form').bootstrapValidator();
 
+    if (window.location.href.indexOf('sent=1') > 0) {
+        $('.contact-sent').show();
+    }
 });

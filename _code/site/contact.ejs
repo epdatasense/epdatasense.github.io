@@ -5,7 +5,8 @@
             <div class="col-md-8">
                 <h2>Get In Touch With Us</h2>
                 <p>Send us your message and we will reply shortly.</p>
-                <form role="form" method="post" action="" class="contact-form">
+                <div class="contact-sent alert alert-success">Message was sent successfully.</div>
+                <form action="//forms.brace.io/contact@epdatasense.com" method="post" class="contact-form">
                     <fieldset>
                         <div class="form-group">
                             <label>Your name</label>
@@ -16,7 +17,7 @@
 
                         <div class="form-group">
                             <label>Your email address</label>
-                            <input type="text" name="contact-email" class="form-control"
+                            <input type="text" name="_replyto" class="form-control"
                                    data-bv-notempty  data-bv-notempty-message="Please enter your email address" data-bv-emailaddress/>
                         </div>
 
@@ -28,6 +29,7 @@
                         </div>
 
                         <div>
+                            <input type="hidden" name="_next" value="//www.epdatasense.com/contact.html?sent=1" />
                             <input type="submit" value="Send Your Message" name="contact-submit" class="btn btn-green btn-lg" title="Click here to submit your message." />
                         </div>
                     </fieldset>
