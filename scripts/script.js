@@ -1,7 +1,7 @@
 $(function () {
     $('#slides').slick({
         autoplay: true,
-        autplaySpeed: 10000,
+        autoplaySpeed: 10000,
         responsive: [{
             breakpoint: 768,
             settings: {
