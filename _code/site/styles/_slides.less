@@ -1,85 +1,73 @@
+.slick-slider {
+    margin-bottom: 0;
+}
+
+.slick-next {
+    right: 30px;
+}
+
+.slick-prev {
+    left: 30px;
+}
+
+.top-slides { 
+    width: 100%;
+    max-height: 780px;
+}
+
+.top-slide {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+}
+
 .slide-caption {
+    position: absolute;
+    
     left: 90px;
     max-width: 700px;
     padding: 10px 20px;
-    position: relative;
+
     top: 25%;
     width: 70%;
     z-index: 3;
     color: white;
+    
+    h1 {
+        color: #fff;
+        font-size: 50px;
+        font-weight: 400;
+        letter-spacing: -2px;
+        line-height: 70px;
+    }
+
+    h4 { color: #fff }
+
+    p {
+        color: #fff;
+        color: rgba(255,255,255,1);
+        font-size: 18px;
+        line-height: 26px;
+        text-shadow: 0 2px 1px rgba(0,0,0,.4);
+    }
 }
-
-.slides-navigation { top: 50% }
-
-.slides-navigation a {
-    border: 1px solid #fff;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    color: white;
-    display: block;
-    font-size: 20px;
-    font-weight: normal;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 25px;
-    text-align: center;
-    text-decoration: none;
-    top: -40px;
-    -webkit-transition: background 0.15s ease;
-    -moz-transition: background 0.15s ease;
-    -o-transition: background 0.15s ease;
-    transition: background 0.15s ease;
-    width: 30px;
-}
-
-.slides-navigation a:hover { background: rgba(0, 0, 0, 0.4) }
-
-.top-slides { max-height: 780px }
 
 @media screen and (max-width: 767px) { 
-    
-    .slides-navigation { display: none }
 
-    .top-slides { max-height:500px }   
+    .top-slides { 
+        max-height:500px 
+    }   
 
     .slide-caption {
          left: 0;
          width: 90%;
          padding: 10px 20px;
-         position: relative;
          top: 5%;
          z-index: 3;
     }
-   
+       
 }
 
-.slides-pagination a {
-    border-color: white;
-    -webkit-box-shadow: 0 1px 1px black;
-    -moz-box-shadow: 0 1px 1px black;
-    box-shadow: 0 1px 1px black;
-    height: 15px;
-    margin: 5px 2px;
-    width: 15px;
-}
 
-.slides-pagination a.current { background: white }
-
-.slide-caption h1 {
-    color: #fff;
-    font-size: 50px;
-    font-weight: 400;
-    letter-spacing: -2px;
-    line-height: 70px;
-}
-
-.slide-caption h4 { color: #fff }
-
-.slide-caption p {
-    color: #fff;
-    color: rgba(255,255,255,1);
-    font-size: 18px;
-    line-height: 26px;
-    text-shadow: 0 2px 1px rgba(0,0,0,.4);
-}

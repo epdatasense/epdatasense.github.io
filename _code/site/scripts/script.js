@@ -1,10 +1,13 @@
 $(function () {
-    $('.top-slides').superslides({
-        animation: "slide",
-        slide_speed: 300,
-        pagination: true,
-        scrollable: true,
-        play: 9000
+    $('.top-slides').slick({
+        autoplay: true,
+        autplaySpeed: 5000,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: false
+            }
+        }]
     });
 
     $('.main-navigation').sticky({
