@@ -6,7 +6,7 @@
                 <h2>Get In Touch With Us</h2>
                 <p>Send us your message and we will reply shortly.</p>
                 <div class="contact-sent alert alert-success">Message was sent successfully.</div>
-                <form action="//forms.brace.io/contact@epdatasense.com" method="post" id="contact-form">
+                <form action="//formspree.io/contact@epdatasense.com" method="post" id="contact-form">
                     <fieldset>
                         <div class="form-group">
                             <label>Your name</label>
@@ -30,6 +30,7 @@
 
                         <div>
                             <input type="hidden" name="_next" value="//www.epdatasense.com/contact.html?sent=1" />
+                            <input type="text" name="_gotcha" style="display:none" />
                             <input type="submit" value="Send Your Message" name="contact-submit" class="btn btn-green btn-lg" title="Click here to submit your message." />
                         </div>
                     </fieldset>
